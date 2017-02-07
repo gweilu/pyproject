@@ -9,4 +9,4 @@ def my_abs(x):
         return -x
 
 def quadratic(a,b,c):
-    if not isinstance(a,)
+    if not isinstance(a,(int,float))
