@@ -29,6 +29,7 @@ def quadratic(a,b,c):
         x1=(-b+math.sqrt(d))/2/a
         x2=(-b-math.sqrt(d))/2/a
         print ('Then function root are : %.2f,%.2f'%(x1,x2))
+'''
 print ('please input a value:')
 a=int(input())
 print ('please input b value:')
@@ -37,4 +38,21 @@ print ('please input c value:')
 c=int(input())
 
 quadratic(a,b,c)
+'''
+#默认参数
+def enroll(name,gender,age=6,city='qingdao'):
+    print('name= ',name)
+    print('gender= ', gender)
+    print('age= ', age)
+    print('city= ', city)
+enroll('weilu','F',city='shanghai')
 
+def plist(*num):
+    for i in num:
+        print (i)
+plist(1,2,3)
+
+def person(name,age,*,city='newyork',job):
+    print('name: ',name,'\n','age: ',age,'\n',city,'\n',job)
+extra={'city':'beijing','job':'Engineer'}
+person('weilu','31',job='doctor')
