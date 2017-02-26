@@ -75,7 +75,7 @@ def move(n,a,b,c):
     print('move',a,'-->',c)
     move(n-1,b,a,c)
 move(2,'甲','乙','丙')
-'''
+
 #切片
 L=list(range(100))
 print(L[0:10])
@@ -96,3 +96,14 @@ for i,value in enumerate(['a','b','c']):
     print(i,value)
 for x,y in [(1,2),(3,4),(5,6)]:
     print(x,y)
+    '''
+#列表生产式
+L=[m+n for m in 'ABC' for n in 'XYZ']
+print(L)
+L = ['Hello', 'World', 18, 'Apple', None]
+o=[s.lower() for s in L if isinstance(s,str)==True]
+print(o)
+#生成器
+g=(x*x for x in range(10))
+for n in g:
+    print(n)
